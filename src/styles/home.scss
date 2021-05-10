@@ -1,0 +1,102 @@
+.h-back1{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.h-text1{
+    font-size: 10px;
+    color: #494F66;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+}
+.h-text2{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    @media (min-width: 768px) {
+        margin-bottom: 1rem;
+        font-size: 36px;
+        letter-spacing: -0.2px;
+        line-height: 48px;
+    }
+}
+.h-textMarked{
+    color: #EF3340;
+}
+.h-text3{
+    color: #676F8F;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.h-logo{
+    height: 16px;
+}
+
+.h-banner1{
+    padding-top: 24px;
+    padding-left: 30px !important;
+}
+
+.h-banner2{
+    margin-bottom: 64px;
+    @media (min-width: 1400px) {
+        margin-bottom: 160px;
+    }
+}
+.h-imageContainer{
+    text-align: center;
+    @media (min-width: 768px) {
+        padding-top: 80px  !important;
+    }
+    @media (min-width: 992px) {
+        padding-left: 100px !important;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 145px !important;
+    }
+    @media (min-width: 1400px) {
+        padding-top: 95px !important;
+        padding-left: 145px !important;
+    }
+}
+
+.h-imagePrincipal{
+    height: 250px;
+}
+
+.h-logoR{
+    padding-left: 32px !important;
+    padding-right: 0px !important;
+    text-align: left;
+}
+.h-callR{
+    padding-right: 32px !important;
+    padding-left: 0px !important;
+    text-align: right;
+}
+.h-areaR{
+    padding-left: 32px !important;
+    padding-top: 25px !important;
+}
+.h-imageR{
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    height: 270px;
+}
+.h-backR{
+    background-color: #F7F8FC;
+    padding: 0px 0px 20px 0px !important;
+}
+.h-formR{
+    @media (max-width: 767px) {
+        padding: 0px 32px !important;
+    }
+}
