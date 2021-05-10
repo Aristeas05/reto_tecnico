@@ -1,15 +1,14 @@
 import React from "react";
 import CallUs from '../atoms/callUs.jsx';
+import Logo from '../atoms/logo.jsx';
 import DataForm from '../organisms/dataForm.jsx';
 import Footer from '../atoms/footer.jsx';
 const Home = () => (
-    <section>
+    <body>
         <div className="row nr">
             <div className="col col-sm-5 h-back1 d-none d-sm-block" style={{backgroundImage: `url(./home/background.svg)`}}>
                 <div className="row">
-                    <div className="offset-2 col-10 h-banner1">
-                        <img src="./logo.svg" alt="" />
-                    </div>
+                    <Logo />
                     <div className="col-12 h-imageContainer">
                         <img src="./home/principal_image.svg" alt="" className="h-imagePrincipal"/>
                     </div>
@@ -52,7 +51,7 @@ const Home = () => (
                 </div>
             </div>
             <div className="col-12 col-sm-7 h-formR">
-                <div className="d-none d-sm-block npud" >
+                <div className="d-none d-sm-block" >
                     <CallUs />
                 </div>
                 <div className="row">
@@ -62,7 +61,7 @@ const Home = () => (
                 </div>
             </div>
         </div>
-    </section>
+    </body>
 )
 
 export default Home

@@ -1,0 +1,106 @@
+.e-back{
+    padding: 0px !important;
+    @media (min-width: 992px) {
+        background-color: #F7F8FC;
+        object-fit: cover;
+        height: 100vh;
+        padding: 8px;
+    }
+}
+.e-img{
+    position: absolute;
+    top: 175px;
+    height: 448px;
+    left: -65px;
+    @media (min-width: 992px) {
+        left: 15px;
+    }
+    @media (min-width: 1200px) {
+        left: 75px;
+    }
+    @media (min-width: 1400px) {
+        left: 125px;
+    }
+}
+
+.e-imgR{
+    width: 100%;
+}
+
+.e-text1{
+    font-weight: normal;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    color: #EF3340;
+    font-size: 28px;
+        margin-bottom: 0px;
+    @media (min-width: 992px) {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.2px;
+        margin-bottom: 16px;
+    }
+}
+
+.e-text2{
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    color: #494F66;
+    @media (min-width: 992px) {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.2px;
+    }
+}
+
+.e-text3{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #676F8F;
+    margin-bottom: 0px;
+    @media (min-width: 768px) {
+        margin-bottom: 8px;
+    }
+}
+
+.e-separation{
+    margin-top: 29px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    @media (min-width: 768px) {
+        margin-top: 64px  !important;
+        padding-top: 80px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}
+
+.e-separationR{
+    margin-top: 48px !important;
+}
+
+.e-button{
+    margin-top: 30px;
+    background: #EF3340;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    padding: 20px 32px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.e-footer{
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid #E4E8F7;
+}

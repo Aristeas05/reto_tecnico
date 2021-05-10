@@ -1,16 +1,14 @@
 import React from 'react';
 import CallUs from '../atoms/callUs.jsx';
 import Logo from '../atoms/logo.jsx';
-const Header = () => (
-    <header>
-        <div className="row">
-            <div className="col">
+const Banner = () => (
+        <div className="row nr b-props">
+            <div className="col npud">
                 <Logo />
             </div>
-            <div className="col">
+            <div className="col npud">
                 <CallUs />
             </div>
         </div>
-    </header>
 )
-export default Header
+export default Banner
