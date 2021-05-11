@@ -1,6 +1,6 @@
 .e-back{
     padding: 0px !important;
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
         background-color: #F7F8FC;
         object-fit: cover;
         height: 100vh;
@@ -71,7 +71,7 @@
     padding-left: 32px !important;
     padding-right: 32px !important;
     @media (min-width: 768px) {
-        margin-top: 64px  !important;
+        margin-top: 48px  !important;
         padding-top: 80px !important;
         padding-left: 8px !important;
         padding-right: 8px !important;
@@ -79,7 +79,9 @@
 }
 
 .e-separationR{
-    margin-top: 48px !important;
+    @media (max-width: 767px) {
+        margin-top: 48px !important;
+    }
 }
 
 .e-button{

@@ -11,8 +11,8 @@ const End = () => (
                     <img className="e-imgR d-block d-sm-none" src="../end/end_image_responsive.svg" alt="" />
                 </div>
                 <div className="col-12 col-sm-9 col-md-8 e-separation">
-                    <div className="row">
-                        <div className="col-12 offset-sm-3 col-sm-8 offset-lg-3 col-lg-7">
+                    <div className="row nr">
+                        <div className="col-12 offset-sm-3 col-sm-8 offset-lg-3 col-lg-7 np">
                             <p className="e-text1">
                                 ¡Te damos la bienvenida!
                             </p>
@@ -31,7 +31,7 @@ const End = () => (
                         </div>
                     </div>
                 </div>
-                <div className="col-12 e-footer">
+                <div className="col-12 e-footer  d-block d-sm-none">
                     <Footer />
                 </div>
             </div>

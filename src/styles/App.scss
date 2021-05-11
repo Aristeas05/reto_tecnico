@@ -44,6 +44,16 @@
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
+.nplr{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.nplrR{
+  @media (max-width: 767px) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
 .nr{
   width: 100% !important;
   margin: 0px !important;

@@ -1,0 +1,222 @@
+
+.af-select{
+    background: #FFFFFF;
+    width: 100% !important;
+    border: 1px solid #C5CBE0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: 0.5s !important;
+    height: 56px;
+    padding: 16px;
+}
+
+.af-button{
+    background: #EF3340;
+    border-radius: 8px;
+    border: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    padding: 20px 55px;
+    margin-top: 24px;
+    svg{
+        height: 15px;
+        padding-bottom: 2px;
+        @media (max-width: 767px) {
+            position: relative;
+            left: 60px;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-top: 16px;
+        width: 100%;
+    }
+}
+
+.af-changer{
+    margin-bottom: 15px;
+    .MuiRadio-colorPrimary.Mui-checked {
+        color: #43B748;
+    }
+    .MuiFormGroup-root{
+        text-align: left;
+        display: block !important;
+        .MuiFormControlLabel-root{
+            .MuiTypography-body1{
+                font-weight: normal !important;
+                font-size: 16px !important;
+                line-height: 24px !important;
+                letter-spacing: 0.2px !important;
+                color: #494F66 !important;
+            }
+        }
+        @media (max-width: 767px) {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+        @media (min-width: 992px) {
+            text-align: right;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 0px !important;
+    }
+}
+.af-backR{
+    background: #F7F8FC;
+    border-radius: 8px;
+    margin-top: 16px !important;
+
+}
+.af-text1R{
+    font-weight: normal;
+    font-size: 14px;
+    color: #676F8F;
+    margin-top: 5px !important;
+    margin-bottom: 0px;
+}
+.af-textBoxLinkR{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #6F7DFF;
+}
+.af-icoR{
+    width: 100%;
+}
+.af-buttonMinus{
+    border-right: 0px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+.af-buttonPlus{
+    border-left: 0px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.af-border{
+    padding-top: 0px !important;
+    @media (min-width: 992px) {
+        border-top: 1px solid #E4E8F7;
+        padding-top: 30px !important;
+    }
+}
+.af-buttonChanger{
+    padding-right: 0px !important;
+    text-align: left;
+    @media (min-width: 992px) {
+        text-align: right;
+    }
+    button{
+        width: 20%;
+        height: 57px;
+        border: 1px solid #C5CBE0;
+        background-color: transparent;
+        font-size: 10px;
+        svg{
+            color: #6F7DFF;
+        }
+    }
+    span{
+        padding: 13px 18px 21px;
+        border: 1px solid #C5CBE0;
+        border-left: 0px;
+        border-right: 0px;
+        font-weight: normal;
+        font-size: 16px !important;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #494F66;
+    }
+}
+
+.af-formChanger{
+    .MuiFormControl-root{
+        margin: 0px;
+        width: 100%;
+        .MuiFormLabel-root{
+            padding-top: 5px !important;
+            padding-left: 14px !important;
+        }
+        .MuiFilledInput-underline:hover:before {
+            border-bottom: none !important;
+        }
+        .MuiInputBase-root{
+            background: #FFFFFF !important;
+            border: 1px solid #C5CBE0 !important;
+            border-radius: 4px !important;
+            transition: 0.5s !important;
+            height: 56px !important;
+            padding: 20px 9px 9px !important;
+        }
+        .MuiSelect-icon{
+            color: #EF3340 !important;
+        }
+    }
+    
+}
+.af-padR{
+    @media (max-width: 767px) {
+        padding: 0px !important;
+    }
+}
+.af-text1{
+    margin-bottom: 0px;
+    margin-top: 23px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #494F66;
+    margin-left: 10px;
+    @media (min-width: 992px) {
+        padding: 0px !important;
+        margin-left: 0px;
+    }
+}
+
+.form-check-input {
+        border-color: #43B748 !important;
+        transition: 0.5s;
+        margin-top: 5px;
+        margin-right: 12px;
+    &:checked{
+        background-color: #43B748 !important;
+        border-color: #43B748 !important;
+        transition: 0.5s;
+    }
+}
+
+.af-priceTitle{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #494F66;
+    margin-bottom: 5px !important;
+}
+.af-priceRange{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    color: #676F8F;
+    margin-bottom: 8px !important;
+    @media (min-width: 768px) {
+        margin-bottom: 1rem;
+    }
+}
+
+::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A3ABCC;
+  }
