@@ -1,6 +1,8 @@
+import types from './types';
+
 const updateName = name => {
     return {
-        type: 'UPDATE_NAME',
+        type: types.UPDATE_NAME,
         payload: name,
     }
 }

@@ -1,6 +1,8 @@
+import types from './types';
+
 const updatePlate = plate => {
     return {
-        type: 'UPDATE_PLATE',
+        type: types.UPDATE_PLATE,
         payload: plate
     }
 }

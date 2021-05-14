@@ -5,7 +5,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import getUserData from '../services/getUserData';
 import updatePlate from '../../redux/store/plate/action';
 import updateName from '../../redux/store/name/action';
-import {connect, useDispatch} from "react-redux";
+import {useDispatch} from "react-redux";
 import Popper from '@material-ui/core/Popper';
 import Fade from '@material-ui/core/Fade';
 
@@ -47,7 +47,7 @@ const DataForm = (props) => {
     const updatePlateValue = (e) => {
         let newPlate = e.target.validity.valid;
         if(newPlate){
-            setplatevalue(e.target.value);
+            setplatevalue((e.target.value).toUpperCase());
         }
     }
 
@@ -173,4 +173,4 @@ const DataForm = (props) => {
     )
 }
 
-export default connect(null, {updatePlate,updateName})(DataForm);
+export default DataForm;

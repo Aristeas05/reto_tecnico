@@ -3,14 +3,23 @@ import {NavLink} from "react-router-dom"
 import Banner from "../molecules/banner.jsx";
 import AutoForm from "../organisms/autoForm.jsx";
 import Footer from "../atoms/footer.jsx";
-import Plate from '../../redux/store/plate/plate';
-import Name from '../../redux/store/name/name';
 import Steps from '../molecules/steps';
 import ModelPop from '../atoms/modelPop';
 import ModelCheckPrice from '../molecules/modelCheckPrice';
 import TabChar from '../organisms/tabChar';
+import {useSelector} from 'react-redux';
 
 const Data = (props) => {
+    
+    const userInfo = useSelector(state => state.nameReducer );
+    const userPlate = useSelector(state => state.plateReducer );
+
+    console.log(userInfo.name);
+    console.log(userPlate.plate);
+
+    if (userInfo.name === '' || userPlate.plate === '') {
+        props.history.push('/');
+    }
 
     const [infoValue, setInfoValue] = React.useState(true);
     const [stepValue, setStepValue] = React.useState(0);
@@ -67,7 +76,7 @@ const Data = (props) => {
                                         VOLVER
                                     </NavLink>
                                     <p className="d-text1">
-                                        ¡Hola, <span><Name />!</span>
+                                        ¡Hola, <span>{userInfo.name}!</span>
                                     </p>
                                     <p className="d-text2">
                                         Completa los datos de tu auto
@@ -100,7 +109,7 @@ const Data = (props) => {
                                     </div>
                                     <div className="col-12 d-tipBoxR">
                                         <p className="d-boxText1">
-                                            Placa: <Plate />
+                                            Placa: {userPlate.plate}
                                         </p>
                                         <p className="d-boxText2">
                                             {brandValue} {yearValue} <br/> Golf
@@ -130,7 +139,7 @@ const Data = (props) => {
                                         <div className="row nr d-borderBox d-none d-sm-block">
                                             <div className="col-6">
                                                 <p className="d-boxText1">
-                                                Placa: <Plate />
+                                                Placa: {userPlate.plate}
                                                 </p>
                                                 <p className="d-boxText2">
                                                     {brandValue} {yearValue} Golf

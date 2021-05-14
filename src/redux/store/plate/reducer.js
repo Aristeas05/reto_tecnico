@@ -1,7 +1,9 @@
+import types from './types';
+
 const initialState = { plate: "" };
 
 export default (state = initialState, action) => {
-    if (action.type === 'UPDATE_PLATE') {
+    if (action.type === types.UPDATE_PLATE) {
         return{
             ... state,
             plate: action.payload

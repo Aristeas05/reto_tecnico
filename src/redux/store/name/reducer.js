@@ -1,7 +1,9 @@
+import types from './types';
+
 const initialState = { name: "" };
 
 export default (state = initialState, action) => {
-    if (action.type === 'UPDATE_NAME') {
+    if (action.type === types.UPDATE_NAME) {
         return{
             ... state,
             name: action.payload
