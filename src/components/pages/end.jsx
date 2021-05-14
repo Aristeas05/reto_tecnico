@@ -7,8 +7,8 @@ const End = () => (
         <section>
             <div className="row nr">
                 <div className="col-12 col-sm-3 col-md-4 e-back e-separationR">
-                    <img className="e-img d-none d-sm-block" src="../end/end_image.svg" alt="" />
-                    <img className="e-imgR d-block d-sm-none" src="../end/end_image_responsive.svg" alt="" />
+                    <img className="e-img d-none d-sm-block" src="../end/end_image.svg" alt="End" />
+                    <img className="e-imgR d-block d-sm-none" src="../end/end_image_responsive.svg" alt="End" />
                 </div>
                 <div className="col-12 col-sm-9 col-md-8 e-separation">
                     <div className="row nr">

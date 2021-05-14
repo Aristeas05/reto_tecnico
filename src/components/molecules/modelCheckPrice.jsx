@@ -20,7 +20,7 @@ const ModelCheckPrice = ({actualPrice,props}) => {
                 </p>
             </div>
             <div className="d-none d-sm-block col-5 np d-ico">
-                <img src="../data/protect_logo.svg" alt="" />
+                <img src="../data/protect_logo.svg" alt="Protect Logo" />
             </div>
             <div className="d-none d-sm-block col-12 nplr d-textBoxProps2">
                 <p className="d-textBox2">

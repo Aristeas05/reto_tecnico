@@ -19,14 +19,14 @@ const ModelPop = () => {
                         </NavLink>
                     </div>
                     <div className="col-4 d-textBoxImg">
-                        <img src="../data/icon_car.svg" alt="" />
+                        <img src="../data/icon_car.svg" alt="Car" />
                     </div>
                 </div>
             </div>
             <div className="af-backR np d-block d-sm-none">
                 <div className="row nr">
                     <div className="col-4">
-                        <img className="af-icoR" src="../data/icon_car.svg" alt="" />
+                        <img className="af-icoR" src="../data/icon_car.svg" alt="Car" />
                     </div>
                     <div className="col-8 nplr">
                         <p className="af-text1R">

@@ -63,7 +63,7 @@ const Data = (props) => {
                             <div className="row nr">
                                 <div className="col-12 nplr">
                                     <NavLink className="d-none d-sm-block d-textBack" exact to="/">
-                                        <img className="d-backIco" src="../data/back_arrow.svg" alt="" />
+                                        <img className="d-backIco" src="../data/back_arrow.svg" alt="Back" />
                                         VOLVER
                                     </NavLink>
                                     <p className="d-text1">
@@ -108,7 +108,7 @@ const Data = (props) => {
                                         <a className="d-textBoxLink2" onClick={triggerChanges}>
                                             EDITAR
                                         </a>
-                                        <img className="d-boxImg" src="../data/person.svg" alt="" />
+                                        <img className="d-boxImg" src="../data/person.svg" alt="Person" />
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ const Data = (props) => {
                                 <div className="row nr">
                                     <div className="col-12 nplr d-none d-sm-block">
                                         <span className="d-textBack" onClick={triggerChanges}>
-                                            <img className="d-backIco" src="../data/back_arrow.svg" alt="" />
+                                            <img className="d-backIco" src="../data/back_arrow.svg" alt="Back" />
                                             VOLVER
                                         </span>
                                         <p className="d-text1">
@@ -140,7 +140,7 @@ const Data = (props) => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <img className="d-boxImg d-none d-sm-block" src="../data/person.svg" alt="" />
+                                        <img className="d-boxImg d-none d-sm-block" src="../data/person.svg" alt="Person" />
                                         <div className="row nr">
                                             <div className="col-12 npud">
                                                 <p className="d-tabsText">

@@ -10,7 +10,7 @@ const Home = (props) => (
             <div className="row">
                 <Logo />
                 <div className="col-12 h-imageContainer">
-                    <img src="./home/principal_image.svg" alt="" className="h-imagePrincipal"/>
+                    <img src="./home/principal_image.svg" alt="Principal" className="h-imagePrincipal"/>
                 </div>
                 <div className="col-md-9 col-lg-8 col-xl-7  col-xxl-6 offset-md-2 offset-lg-3 offset-xl-3 offset-xxl-4 h-banner2">
                     <p className="h-text1">
@@ -46,7 +46,7 @@ const Home = (props) => (
                     <p className="h-text3">
                         Cuentanos donde le haras seguimiento a tu seguro
                     </p>
-                    <img className="h-imageR" src="./home/principal_image_responsive.svg" alt="" />
+                    <img className="h-imageR" src="./home/principal_image_responsive.svg" alt="Principal" />
                 </div>
             </div>
         </div>

@@ -77,7 +77,7 @@ const AccordionItem = ({evaluateAmountAction}) => {
                     <Typography className={classes.heading}>
                         <div className="row nr np ai-space">
                             <div className="col-2 d-icoDrop">
-                                <img src='../data/icon_theft.svg' alt="" />
+                                <img src='../data/icon_theft.svg' alt="Theft" />
                             </div>
                             <div className="col-8 col-sm-10 col-lg-7 col-xxl-6">
                                 <p className="d-dropdown-title">
@@ -129,7 +129,7 @@ const AccordionItem = ({evaluateAmountAction}) => {
                     <Typography className={classes.heading}>
                         <div className="row nr np ai-space">
                             <div className="col-2 d-icoDrop">
-                                <img src='../data/icon_damage.svg' alt="" />
+                                <img src='../data/icon_damage.svg' alt="Damage" />
                             </div>
                             <div className="col-8 col-sm-10 col-lg-7 col-xxl-6">
                                 <p className="d-dropdown-title">
@@ -181,7 +181,7 @@ const AccordionItem = ({evaluateAmountAction}) => {
                     <Typography className={classes.heading}>
                         <div className="row nr np ai-space">
                             <div className="col-2 d-icoDrop">
-                                <img src='../data/icon_perdidatotal.svg' alt="" />
+                                <img src='../data/icon_perdidatotal.svg' alt="Total Lost" />
                             </div>
                             <div className="col-8 col-sm-10 col-lg-7 col-xxl-6">
                                 <p className="d-dropdown-title">

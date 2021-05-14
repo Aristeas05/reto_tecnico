@@ -52,7 +52,7 @@ const Steps = ({presentStep,goBackStep,showInfo}) => {
                             <>
                                 <div className="col-5 np">
                                     <NavLink className="d-stepTextR" exact to="/">
-                                        <img className="d-backIco" src="../data/back_arrow_responsive.svg" alt="" />
+                                        <img className="d-backIco" src="../data/back_arrow_responsive.svg" alt="Back" />
                                         PASO 1 DE 2
                                     </NavLink>
                                 </div>
@@ -68,7 +68,7 @@ const Steps = ({presentStep,goBackStep,showInfo}) => {
                             <>
                                 <div className="col-5 np">
                                     <p className="d-stepTextR" onClick={triggerChanges}>
-                                        <img className="d-backIco" src="../data/back_arrow_responsive.svg" alt="" />
+                                        <img className="d-backIco" src="../data/back_arrow_responsive.svg" alt="Back" />
                                         PASO 2 DE 2
                                     </p>
                                 </div>
