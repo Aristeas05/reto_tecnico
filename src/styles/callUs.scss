@@ -1,0 +1,28 @@
+.cu-back{
+    background-color: transparent;
+    padding-top: 25px;
+}
+
+.cu-phoneIco{
+    height: 20px;
+    margin-right: 5px;
+    @media (min-width: 768px) {
+        height: 16px;
+    }
+}
+
+.cu-phoneNumber{
+    text-align: right;
+    font-size: 14px;
+    color: #6F7DFF;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.cu-text{
+    font-size: 12px;
+    color: #676F8F;
+    text-align: right;
+    margin-top: 2px;
+}
