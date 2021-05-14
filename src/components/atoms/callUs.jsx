@@ -9,14 +9,14 @@ const CallUs = () => (
                         <p className="cu-text">¿Tienes alguna duda?</p>
                     </div>
                     <div className="col npud">
-                        <p className="cu-phoneNumber"><img className="cu-phoneIco" src="../ic_phone.svg" alt="" /> (01) 411 6001</p>
+                        <p className="cu-phoneNumber"><img className="cu-phoneIco" src="../ic_phone.svg" alt="Phone" /> (01) 411 6001</p>
                     </div>
                 </div>
             </div>
         </div>
         <div className="row d-block d-sm-none np">
             <div className="col-10 npud">
-                <p className="cu-phoneNumber"><img className="cu-phoneIco" src="../ic_phone.svg" alt="" /> Llámanos</p>
+                <p className="cu-phoneNumber"><img className="cu-phoneIco" src="../ic_phone.svg" alt="Phone" /> Llámanos</p>
             </div>
         </div>
     </>

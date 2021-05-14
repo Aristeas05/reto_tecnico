@@ -1,89 +1,79 @@
 import React from "react";
 import Radio from '@material-ui/core/Radio';
+import Button from '@material-ui/core/Button';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import TextField from '@material-ui/core/TextField';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
-import { makeStyles } from '@material-ui/core/styles';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-const AutoForm = () => {
-    const useStyles = makeStyles((theme) => ({
-        formControl: {
-          margin: theme.spacing(1),
-          minWidth: 120,
-        },
-        selectEmpty: {
-          marginTop: theme.spacing(2),
-        },
-      }));
-    const classes = useStyles();
-    const [year, setYear] = React.useState('');
-    const [brand, setBrand] = React.useState('');
+import ModelPop from '../atoms/modelPop';
+import AutoFormImput from '../molecules/autoFormInput';
+import Popper from '@material-ui/core/Popper';
+import Fade from '@material-ui/core/Fade';
 
-    const handleChange = (event) => {
-        setYear(event.target.value);
-    };
-    const handleSwap = (event) => {
-        setBrand(event.target.value);
+const AutoForm = ({changeContent,changeStep,returnFormValues}) => {
+
+    const yearValues = ['2018','2019','2020','2021'];
+    const brandValues = ['Wolkswagen','Audi','Toyota','Nissan'];
+    const [payValue, setPayValue] = React.useState(13300);
+    const [yearValue, setYearValue] = React.useState('');
+    const [brandValue, setBrandValue] = React.useState('');
+    const [gasValue, setGasValue] = React.useState('');
+    const [modalMessage, setModalMessage] = React.useState('');
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'transitions-popper' : undefined;
+
+    const outPoper = (e) => {
+        setAnchorEl(anchorEl ? null : e.currentTarget);
     }
+
+    const decreaseAmountValue = () => {
+        if ( payValue > 12500 ) {
+            setPayValue(payValue - 100);
+        }
+    }
+ 
+    const increaseAmountValue = () => {
+        if ( payValue < 16500 ) {
+            setPayValue(payValue + 100);
+        }
+    }
+
+    const giveBackThatYear = (item) => {
+        setYearValue(item);
+    }
+
+    const giveBackThatBrand = (item) => {
+        setBrandValue(item);
+    }
+
+    const giveRadioVal = (e) => {
+        setGasValue( e.target.value);
+    }
+
+    const triggerChanges = (e) => {
+        if (yearValue !== '' && brandValue !== '' && gasValue !== '') {
+            changeContent();
+            changeStep();
+            returnFormValues(yearValue,brandValue);
+        }else{
+            setAnchorEl(anchorEl ? null : e.currentTarget);
+            setModalMessage('Algunos campos requeridos, se encuentran vacios para continuar');
+        }
+    }
+
     return(
         <div className="row">
             <form action="">
                 <div className="row npud">
                     <div className="col-12 nplr af-formChanger npud">
-                        <FormControl variant="filled" className={classes.formControl}>
-                            <InputLabel id="year">Año</InputLabel>
-                            <Select
-                            labelId="year"
-                            id="year"
-                            value={year}
-                            onChange={handleChange}
-                            >
-                                <MenuItem value="">
-                                    <em>None</em>
-                                </MenuItem>
-                                <MenuItem value={10}>2019</MenuItem>
-                                <MenuItem value={20}>2020</MenuItem>
-                                <MenuItem value={30}>2021</MenuItem>
-                            </Select>
-                        </FormControl>
-                        <FormControl variant="filled" className={classes.formControl}>
-                            <InputLabel id="brand">Marca</InputLabel>
-                            <Select
-                            labelId="brand"
-                            id="brand"
-                            value={brand}
-                            onChange={handleSwap}
-                            >
-                                <MenuItem value="">
-                                    <em>None</em>
-                                </MenuItem>
-                                <MenuItem value={1}>Wolkswagen</MenuItem>
-                                <MenuItem value={2}>Audi</MenuItem>
-                                <MenuItem value={3}>Toyota</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <AutoFormImput name={'Año'}id={'year'} values={yearValues} returnValue={giveBackThatYear}/>
+                        <AutoFormImput name={'Marca'}id={'brand'} values={brandValues} returnValue={giveBackThatBrand}/>
                     </div>
-                    <div className="col-12 af-backR np d-block d-sm-none">
-                        <div className="row nr">
-                            <div className="col-4">
-                                <img className="af-icoR" src="../data/icon_car.svg" alt="" />
-                            </div>
-                            <div className="col-8 nplr">
-                                <p className="af-text1R">
-                                    ¿No encuentras el modelo?
-                                </p>
-                                <a className="af-textBoxLinkR" href="">
-                                    CLIC AQUÍ
-                                </a>
-                            </div>
-                        </div>
+                    <div className="d-block d-sm-none np col-12 ">
+                        <ModelPop />
                     </div>
                     <div className="col-12 col-lg-6 af-padR">
                         <p className="af-text1">
@@ -91,7 +81,7 @@ const AutoForm = () => {
                         </p>
                     </div>
                     <div className="col-12 col-lg-6 af-changer">
-                        <RadioGroup row aria-label="position" name="position" defaultValue="top">
+                        <RadioGroup row aria-label="position" name="position" defaultValue="top" onChange={giveRadioVal}>
                             <FormControlLabel value="Si" control={<Radio color="primary" />} label="Si" />
                             <FormControlLabel value="No" control={<Radio color="primary" />} label="No" />
                         </RadioGroup>
@@ -106,15 +96,26 @@ const AutoForm = () => {
                             </p>
                         </div>
                         <div className="col-12 col-lg-5 af-buttonChanger nplr">
-                            <button className="af-buttonMinus"><RemoveIcon/></button>
-                            <span>$13300</span>
-                            <button className="af-buttonPlus"><AddIcon/></button>
+                            <Button onClick={decreaseAmountValue} className="af-buttonMinus"><RemoveIcon/></Button>
+                            <span className="af-spanVal">$ {payValue}</span>
+                            <Button onClick={increaseAmountValue} className="af-buttonPlus"><AddIcon/></Button>
                         </div>
                     </div>
                     <div className="col-12 nplr">
-                        <button className="af-button">
+                        <Button 
+                            className="af-button"
+                            variant="contained"
+                            onClick={triggerChanges}
+                        >
                             CONTINUAR <ArrowForwardIosIcon></ArrowForwardIosIcon>
-                        </button>
+                        </Button>
+                        <Popper onMouseOut={outPoper} id={id} open={open} anchorEl={anchorEl} transition>
+                            {({ TransitionProps }) => (
+                                <Fade {...TransitionProps} timeout={350}>
+                                    <div className='df-poper'>{modalMessage}</div>
+                                </Fade>
+                            )}
+                        </Popper>
                     </div>
                 </div>
             </form>

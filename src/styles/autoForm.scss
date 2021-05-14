@@ -1,27 +1,29 @@
+.af-backR{
+    background: #F7F8FC;
+    border-radius: 8px;
+    margin-top: 16px !important;
 
-.af-select{
-    background: #FFFFFF;
-    width: 100% !important;
-    border: 1px solid #C5CBE0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition: 0.5s !important;
-    height: 56px;
-    padding: 16px;
+}
+
+.af-border{
+    padding-top: 0px !important;
+    @media (min-width: 992px) {
+        border-top: 1px solid #E4E8F7;
+        padding-top: 30px !important;
+    }
 }
 
 .af-button{
-    background: #EF3340;
-    border-radius: 8px;
-    border: 0px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.8px;
-    color: #FFFFFF;
-    padding: 20px 55px;
-    margin-top: 24px;
+    background: #EF3340 !important;
+    border-radius: 8px !important;
+    border: 0px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 0.8px !important;
+    color: #FFFFFF !important;
+    padding: 20px 55px !important;
+    margin-top: 24px !important;
     svg{
         height: 15px;
         padding-bottom: 2px;
@@ -34,6 +36,58 @@
         margin-top: 16px;
         width: 100%;
     }
+}
+
+.af-buttonChanger{
+    padding-right: 0px !important;
+    text-align: center;
+    @media (min-width: 992px) {
+        text-align: right;
+    }
+    button{
+        width: 20%;
+        height: 57px;
+        border: 1px solid #C5CBE0;
+        background-color: transparent;
+        font-size: 10px;
+        svg{
+            color: #6F7DFF;
+        }
+    }
+    .af-spanVal{
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 1px solid #C5CBE0;
+        border-bottom: 1px solid #C5CBE0;
+        font-weight: normal;
+        font-size: 16px !important;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #494F66;
+        padding-top: 15px;
+        padding-bottom: 19px;
+        @media (max-width: 767px){
+            padding-left: 18%;
+            padding-right: 18%;
+        }
+    }
+}
+
+.af-buttonMinus{
+    border-radius: 0px !important;
+    border-right: 0px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    min-width: 50px !important;
+}
+
+.af-buttonPlus{
+    border-radius: 0px !important;
+    border-left: 0px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    min-width: 50px !important;
 }
 
 .af-changer{
@@ -65,75 +119,9 @@
         padding: 0px !important;
     }
 }
-.af-backR{
-    background: #F7F8FC;
-    border-radius: 8px;
-    margin-top: 16px !important;
 
-}
-.af-text1R{
-    font-weight: normal;
-    font-size: 14px;
-    color: #676F8F;
-    margin-top: 5px !important;
-    margin-bottom: 0px;
-}
-.af-textBoxLinkR{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 16px;
-    letter-spacing: 0.8px;
-    color: #6F7DFF;
-}
 .af-icoR{
     width: 100%;
-}
-.af-buttonMinus{
-    border-right: 0px !important;
-    border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
-}
-.af-buttonPlus{
-    border-left: 0px !important;
-    border-top-right-radius: 8px !important;
-    border-bottom-right-radius: 8px !important;
-}
-.af-border{
-    padding-top: 0px !important;
-    @media (min-width: 992px) {
-        border-top: 1px solid #E4E8F7;
-        padding-top: 30px !important;
-    }
-}
-.af-buttonChanger{
-    padding-right: 0px !important;
-    text-align: left;
-    @media (min-width: 992px) {
-        text-align: right;
-    }
-    button{
-        width: 20%;
-        height: 57px;
-        border: 1px solid #C5CBE0;
-        background-color: transparent;
-        font-size: 10px;
-        svg{
-            color: #6F7DFF;
-        }
-    }
-    span{
-        padding: 13px 18px 21px;
-        border: 1px solid #C5CBE0;
-        border-left: 0px;
-        border-right: 0px;
-        font-weight: normal;
-        font-size: 16px !important;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: 0.2px;
-        color: #494F66;
-    }
 }
 
 .af-formChanger{
@@ -161,11 +149,45 @@
     }
     
 }
+
 .af-padR{
     @media (max-width: 767px) {
         padding: 0px !important;
     }
 }
+
+.af-priceTitle{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #494F66;
+    margin-bottom: 5px !important;
+}
+
+.af-priceRange{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    color: #676F8F;
+    margin-bottom: 8px !important;
+    @media (min-width: 768px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.af-select{
+    background: #FFFFFF;
+    width: 100% !important;
+    border: 1px solid #C5CBE0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: 0.5s !important;
+    height: 56px;
+    padding: 16px;
+}
+
 .af-text1{
     margin-bottom: 0px;
     margin-top: 23px;
@@ -181,35 +203,32 @@
     }
 }
 
+.af-text1R{
+    font-weight: normal;
+    font-size: 14px;
+    color: #676F8F;
+    margin-top: 5px !important;
+    margin-bottom: 0px;
+}
+
+.af-textBoxLinkR{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #6F7DFF;
+}
+
 .form-check-input {
-        border-color: #43B748 !important;
-        transition: 0.5s;
-        margin-top: 5px;
-        margin-right: 12px;
+    border-color: #43B748 !important;
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-right: 12px;
     &:checked{
         background-color: #43B748 !important;
         border-color: #43B748 !important;
         transition: 0.5s;
-    }
-}
-
-.af-priceTitle{
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #494F66;
-    margin-bottom: 5px !important;
-}
-.af-priceRange{
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.6px;
-    color: #676F8F;
-    margin-bottom: 8px !important;
-    @media (min-width: 768px) {
-        margin-bottom: 1rem;
     }
 }
 
@@ -219,4 +238,4 @@
     font-size: 16px;
     line-height: 24px;
     color: #A3ABCC;
-  }
+}

@@ -1,11 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { purple } from '@material-ui/core/colors';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 
 const IOSSwitch = withStyles((theme) => ({
   root: {
@@ -61,21 +58,20 @@ const IOSSwitch = withStyles((theme) => ({
 });
 
 
-export default function CustomizedSwitches() {
+export default function CustomizedSwitches({passValues}) {
   const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-    checkedC: true,
+    checked: false,
   });
 
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
+    passValues();
   };
 
   return (
     <FormGroup>
       <FormControlLabel
-        control={<IOSSwitch checked={state.checkedB} onChange={handleChange} name="checkedB" />}
+        control={<IOSSwitch checked={state.checked} onChange={handleChange} name="checked" />}
       />
     </FormGroup>
   );

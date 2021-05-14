@@ -1,16 +1,37 @@
-.row{
-    div{
-        padding-top: 8px;
-        padding-bottom: 8px;
+.df-button{
+    background-color: #EF3340 !important;
+    border-radius: 8px !important;
+    border: 0px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 0.8px !important;
+    color: #FFFFFF !important;
+    padding: 20px 64px !important;
+    margin-top: 40px !important;
+    @media (max-width: 767px) {
+        margin-top: 16px !important;
+        width: 100% !important;
     }
 }
 
-.df-npl{
-    padding-left: 0px !important;
+.df-checkText{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #676F8F !important;
+    width: 80%;
+    padding-left: 10px;
+    & span{
+        text-decoration: underline;
+    }
+    @media (min-width: 992px) {
+        width: 90%;
+    }
 }
-.df-npr{
-    padding-right: 0px !important;
-}
+
 .df-input{
     background: #FFFFFF;
     width: 100%;
@@ -20,6 +41,32 @@
     transition: 0.5s !important;
     height: 56px;
     padding: 16px;
+}
+
+.df-inputSelect{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C5CBE0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.5s !important;
+    height: 56px;
+    padding: 16px;
+}
+
+.df-npl{
+    padding-left: 0px !important;
+}
+
+.df-npr{
+    padding-right: 0px !important;
+}
+
+.df-poper{
+    border: 1px solid;
+    padding: 10px 20px;
+    background-color: #424242;
+    color: white;
 }
 
 .df-select{
@@ -32,19 +79,8 @@
     height: 56px;
     padding: 16px;
 }
-.df-inputSelect{
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #C5CBE0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    transition: 0.5s !important;
-    height: 56px;
-    padding: 16px;
-}
 
 .df-text{
-    //font-family: Lato;
     font-weight: normal;
     font-size: 28px;
     line-height: 36px;
@@ -52,50 +88,15 @@
     color: #494F66;
     margin-bottom: 16px;
 }
-.df-checkText{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #676F8F !important;
-    width: 80%;
-    & span{
-        text-decoration: underline;
-    }
-    @media (min-width: 992px) {
-        width: 90%;
-    }
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #43B748 !important;
 }
-
-.df-button{
-    background: #EF3340;
-    border-radius: 8px;
-    border: 0px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.8px;
-    color: #FFFFFF;
-    padding: 20px 64px;
-    margin-top: 40px;
-    @media (max-width: 767px) {
-        margin-top: 16px;
-        width: 100%;
-    }
+.MuiIconButton-colorSecondary {
+    color: #43B748 !important;
+    bottom: 18px !important;
 }
-
-.form-check-input {
-        border-color: #43B748 !important;
-        transition: 0.5s;
-        margin-top: 5px;
-        margin-right: 12px;
-    &:checked{
-        background-color: #43B748 !important;
-        border-color: #43B748 !important;
-        transition: 0.5s;
-    }
+.MuiInput-underline:before{
+    border-bottom: 0px !important;
 }
 
 ::placeholder {
@@ -104,4 +105,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #A3ABCC;
-  }
+}
+
+.row{
+    div{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
