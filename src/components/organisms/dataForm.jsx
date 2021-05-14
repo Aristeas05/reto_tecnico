@@ -114,7 +114,7 @@ const DataForm = (props) => {
                             className="df-inputSelect" 
                             type="text" 
                             placeholder="Nro. de doc." 
-                            pattern="[0-9]{0,11}"
+                            pattern="[0-9]{0,8}"
                             value={documentValue}
                             onChange={updateDocumentValue}
                         />
